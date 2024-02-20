@@ -1,0 +1,29 @@
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+        
+    }
+
+    function IMC(peso, altura) { 
+        IMC = peso / (altura * altura);
+        return IMC;
+    }
+
+    var altura = null;
+    var peso = null;
+    
+    altura = prompt("Digite sua altura");
+    peso = prompt("Digite seu peso");
+
+    mostra("Seu peso é " + IMC(peso, altura));
+
+</script>
